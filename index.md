@@ -17,7 +17,30 @@ I build end‑to‑end AI products – from data cleaning and feature engineerin
 
 ## Featured Project
 
-### UAE Real Estate AI Analyzer
+## AI‑Powered Energy Simulation Engine for Dalma Mall (Abu Dhabi)
+
+**Role:** Lead Developer (sole Data Scientist/AI Engineer)  
+**Tech stack:** Python, Streamlit, Scikit‑learn, Pandas, NumPy, Plotly, Open‑Meteo API  
+**Status:** Deployed and used internally by the mall’s engineering team
+
+### Overview
+Developed a production‑ready machine learning system for one of Abu Dhabi’s largest shopping centres to forecast daily **Power (kW)** and **Cooling Load (Tons)** under extreme arid climate conditions. The system enables proactive HVAC planning, shifting from reactive to predictive energy management.
+
+### Key Contributions
+- Engineered a **physics‑informed Ridge regression model** with polynomial features, using atmospheric enthalpy instead of naive lag‑based predictors. Achieved **R² > 0.96** for both targets.
+- Built an interactive **Streamlit dashboard** with two operating modes:
+  - **Manual mode:** real‑time “what‑if” simulation (dry bulb, wet bulb, footfall, occupancy).
+  - **Auto date‑range mode:** predicts all input parameters from Open‑Meteo weather data (bias‑corrected to local sensors) + historical footfall/occupancy patterns, then generates day‑by‑day forecasts with downloadable CSV and Plotly time‑series visualisation.
+- Deployed on **Streamlit Cloud**; currently used internally by the mall’s engineering team.
+
+### Impact
+Helps the mall reduce operational expenditure while maintaining customer comfort in a cooling‑dominated climate. The project demonstrates full‑stack AI engineering: from physics‑informed feature engineering to interactive deployment.
+
+> **Note:** The underlying training data and model coefficients remain proprietary to Dalma Mall. This entry describes the architecture and my development role only.
+
+---
+
+## UAE Real Estate AI Analyzer
 
 A live price prediction app for the UAE property market. Trained on 41,000+ listings with 40+ distance features (Burj Khalifa, Dubai Mall, metro stations, beaches, airports). Uses CatBoost (R² = 0.73, RMSE = 2.46M AED) and explains predictions via Groq LLM.
 
