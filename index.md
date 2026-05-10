@@ -51,6 +51,25 @@ A live price prediction app for the UAE property market. Trained on 41,000+ list
 
 ---
 
+### Customer Churn Prediction with AI Retention Advice
+
+A production‑ready system that predicts whether a telecom customer will churn and generates personalised, LLM‑powered retention recommendations.
+
+- **Live demo:** [ai-churn-prediction.streamlit.app](https://ai-churn-prediction-hpudyompmu5v7jnxk4epso.streamlit.app/)
+- **GitHub repo:** [github.com/akshyat21/AI-Churn-Prediction](https://github.com/akshyat21/AI-Churn-Prediction)
+
+**Tech stack:** Python, scikit‑learn, Streamlit, LangChain, Groq API, pandas, joblib
+
+**Key decisions:**
+- Logistic regression (AUC 0.84) – interpretable and fast
+- Feature selection (11 out of 31 dummies) to reduce noise
+- Threshold tuning (0.29) to balance recall (77%) and precision (52%)
+- LLM (Groq Llama 3.3) used only for retention suggestions, not risk diagnosis – output is grounded in model coefficients
+
+**Impact:** Helps a retention team prioritise high‑risk customers and act with tailored interventions.
+
+---
+
 ## Work Experience
 
 **Software Engineer (Erlang Backend Developer)**  
